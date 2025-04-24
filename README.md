@@ -49,27 +49,4 @@ ssh-copy-id -p 2223 -i ~/.ssh/id_rsa.pub Brais@<IP_VM_B>
 Probar conexión:
 ssh -p 2223 Brais@<IP_VM_B>
 
-Paso 9: Documentar en GitHub
-Estructura del repositorio:
-tareasFH/
-└── tarea_SSH_SCP/
-    ├── README.md
-    ├── capturas/
-    ├── prueba/
-    ├── prueba2/
-    └── prueba3/
-Comandos para subir el proyecto:
-cd ~/tareasFH
-git init
-git remote add origin https://github.com/tu_usuario/tareasFH.git
-cd tarea_SSH_SCP
-cp /ruta/a/README.md .
-git add .
-git commit -m "Entrega tarea SSH y SCP"
-git push -u origin main
 
-Paso 10: Crear archivo comprimido para entrega
-cd ~/tareasFH
-zip -r tarea_SSH_SCP.zip tarea_SSH_SCP
-
-✅ Tarea completada y documentada correctamente.
